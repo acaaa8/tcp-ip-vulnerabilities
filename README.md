@@ -71,9 +71,7 @@ Perbedaan paling menonjol antara keduanya adalah ukuran dan kompleksitas header.
 A. TCP (Transmission Control Protocol)
 
 Header segmen mencakup: Source/Destination Port, Sequence Number, Acknowledgment Number, Window Size, dan Checksum.
-
 Kerentanannya antara lain:
-
 - SYN Flood: Menyebabkan server kehabisan sumber daya dengan membuka banyak koneksi palsu.
 - TCP Reset Attack: Memaksa koneksi TCP sah untuk terputus.
 - Session Hijacking: Mengambil alih sesi TCP yang sah dengan memanfaatkan nomor urut paket.
@@ -82,10 +80,7 @@ Kerentanannya antara lain:
 B. UDP (User Datagram Protocol)
 
 Header datagram mencakup: Source/Destination Port, Length, dan Checksum.
-
 Karakteristik: connectionless, overhead rendah, tidak menyediakan reliabilitas bawaan, sehingga lebih cepat tapi rentan.
-
 Kerentanannya antara lain:
-
 - UDP Flood Attack: Membanjiri target dengan datagram UDP palsu.
 - Data mudah disadap atau diubah karena UDP tidak memiliki mekanisme validasi dan konfirmasi pengiriman bawaan.
