@@ -74,6 +74,8 @@ Kerentanannya antara lain:
 - SYN Flood: Menyebabkan server kehabisan sumber daya dengan membuka banyak koneksi palsu.
 - TCP Reset Attack: Memaksa koneksi TCP sah untuk terputus.
 - Session Hijacking: Mengambil alih sesi TCP yang sah dengan memanfaatkan nomor urut paket.
+
+  
 B. UDP (User Datagram Protocol)
 Header datagram mencakup: Source/Destination Port, Length, dan Checksum.
 Karakteristik: connectionless, overhead rendah, tidak menyediakan reliabilitas bawaan, sehingga lebih cepat tapi rentan.
