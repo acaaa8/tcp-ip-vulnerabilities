@@ -10,6 +10,7 @@
 
 ## Struktur Header IPv4
 Header pada protokol IPv4 terdiri atas sejumlah field penting yang menyimpan informasi kendali dan alamat. Setiap field memiliki peran khusus dalam memastikan paket dapat dikirimkan dengan benar.
+
 1. Version
 Menunjukkan versi protokol. Untuk IPv4 nilainya adalah 4 (0100 dalam biner).
 2. Internet Header Length (IHL)
@@ -39,7 +40,9 @@ Alamat IPv4 tujuan berukuran 32-bit.
 Field opsional untuk kebutuhan khusus. Padding digunakan agar ukuran header selalu kelipatan 32 bit.
 
 ## Struktur Header IPv6
-IPv6 didesain lebih sederhana dan efisien dibanding IPv4. Banyak field yang dianggap tidak penting dihapus untuk mempercepat pemrosesan paket oleh router. Field-field utama dalam IPv6 antara lain:
+IPv6 didesain lebih sederhana dan efisien dibanding IPv4. Banyak field yang dianggap tidak penting dihapus untuk mempercepat pemrosesan paket oleh router. 
+
+Field-field utama dalam IPv6 antara lain:
 1. Version
 Nilai biner 0110 untuk menunjukkan bahwa paket adalah IPv6.
 2. Traffic Class
@@ -71,7 +74,9 @@ Perbedaan paling menonjol antara keduanya adalah ukuran dan kompleksitas header.
 A. TCP (Transmission Control Protocol)
 
 Header segmen mencakup: Source/Destination Port, Sequence Number, Acknowledgment Number, Window Size, dan Checksum.
+
 Kerentanannya antara lain:
+
 - SYN Flood: Menyebabkan server kehabisan sumber daya dengan membuka banyak koneksi palsu.
 - TCP Reset Attack: Memaksa koneksi TCP sah untuk terputus.
 - Session Hijacking: Mengambil alih sesi TCP yang sah dengan memanfaatkan nomor urut paket.
@@ -80,7 +85,10 @@ Kerentanannya antara lain:
 B. UDP (User Datagram Protocol)
 
 Header datagram mencakup: Source/Destination Port, Length, dan Checksum.
+
 Karakteristik: connectionless, overhead rendah, tidak menyediakan reliabilitas bawaan, sehingga lebih cepat tapi rentan.
+
 Kerentanannya antara lain:
+
 - UDP Flood Attack: Membanjiri target dengan datagram UDP palsu.
 - Data mudah disadap atau diubah karena UDP tidak memiliki mekanisme validasi dan konfirmasi pengiriman bawaan.
