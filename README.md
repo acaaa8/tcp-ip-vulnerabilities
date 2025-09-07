@@ -1,4 +1,4 @@
-# Pertemuan 2: TCP/IP Vulnerabilities
+# Pertemuan 2 TCP/IP Vulnerabilities
 | Nama                            | NRP        |
 | ------------------------------- | ---------- |
 | Fadlillah Cantika Sari Hermawan | 5027231042 |
